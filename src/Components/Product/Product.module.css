@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.card__container{
+    width: 200px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* margin: 50px; */
+}
+.card__container:hover button {
+    display: block;
+}
+.card__container img {
+    padding: 10px;
+    width: 80%;
+    height: 160px;
+    object-fit: contain;
+}
+.button {
+    display: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var( --primary-color);
+}
+button:hover{
+    background-color: var(--secondary-color);
+}
+.rating {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.products__container{
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 80%;
+    margin: 100px ;
+    gap: 50px;
+    justify-content: center;
+    /* margin: 50px; */
+}
+.products__container section {
+    margin: 0 auto;
+
+    
+}
+
+.flexed__container{
+    box-shadow: none;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    width: 90%;
+    height: 50vh;
+}
+.flexed__container h3 {
+    padding: 20px 0px;
+}
+.flexed__container button {
+    display: block;
+    position: static;
+    width: 150px;
+    margin-right: 40px;
+}
+@media screen and (max-width: 768px) {
+    .flexed__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
